@@ -532,8 +532,8 @@ func (p paths) Less(i, j int) bool {
 	//log.WithFields(log.Fields{
 	//	"Topic": "ShoPaCa",
 	//}).Debugf("SHOPACA-- path1: %s, path2: %s", path1, path2))
-	//var better *Path
-	//reason := BPR_UNKNOWN
+	var better *Path
+	reason := BPR_UNKNOWN
 
 	// draft-uttaro-idr-bgp-persistence-02
 	if better == nil {
