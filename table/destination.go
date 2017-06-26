@@ -526,7 +526,7 @@ func (p paths) Less(i, j int) bool {
 	
 	log.WithFields(log.Fields{
 		"Topic": "Table",
-		"Error": e,
+		"Error": "SHOPOCO",
 	}).Error("SHOPACA-- path1: %s, path2: %s", path1, path2)
 	
 	//log.WithFields(log.Fields{
