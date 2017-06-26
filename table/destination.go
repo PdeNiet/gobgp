@@ -523,7 +523,11 @@ func (p paths) Less(i, j int) bool {
 
 	path1 := p[i]
 	path2 := p[j]
-	log.Infof("BESTPATH CALC %p[i] vs %p[j]", p.Config.NeighborAddress)
+	log.WithFields(log.Fields{
+		"Topic": "ShoPaCo",
+		"Key":   dest.GetNlri().String(),
+		"Path":  withdraw,
+	}).Warn("SHORTESTPATHCALC %p[i] vs %p[j]")
 	var better *Path
 	reason := BPR_UNKNOWN
 
