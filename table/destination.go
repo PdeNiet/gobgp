@@ -523,7 +523,7 @@ func (p paths) Less(i, j int) bool {
 
 	path1 := p[i]
 	path2 := p[j]
-
+	log.Infof("Peer %v is added", p.Config.NeighborAddress)
 	var better *Path
 	reason := BPR_UNKNOWN
 
