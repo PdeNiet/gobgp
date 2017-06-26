@@ -520,14 +520,12 @@ func (p paths) Less(i, j int) bool {
 	//	path.
 	//	Assumes paths from NC has source equal to None.
 	//
-
+	
 	path1 := p[i]
 	path2 := p[j]
 	log.WithFields(log.Fields{
-		"Topic": "ShoPaCo",
-		"Key":   dest.GetNlri().String(),
-		"Path":  withdraw,
-	}).Warn("SHORTESTPATHCALC %p[i] vs %p[j]")
+		"Topic": "ShoPaCa",
+	}).Debugf("SHOPACA-- path1: %s, path2: %s", path1, path2))
 	var better *Path
 	reason := BPR_UNKNOWN
 
