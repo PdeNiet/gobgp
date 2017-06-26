@@ -523,11 +523,17 @@ func (p paths) Less(i, j int) bool {
 	
 	path1 := p[i]
 	path2 := p[j]
+	
 	log.WithFields(log.Fields{
-		"Topic": "ShoPaCa",
-	}).Debugf("SHOPACA-- path1: %s, path2: %s", path1, path2))
-	var better *Path
-	reason := BPR_UNKNOWN
+		"Topic": "Table",
+		"Error": e,
+	}).Error("SHOPACA-- path1: %s, path2: %s", path1, path2)
+	
+	//log.WithFields(log.Fields{
+	//	"Topic": "ShoPaCa",
+	//}).Debugf("SHOPACA-- path1: %s, path2: %s", path1, path2))
+	//var better *Path
+	//reason := BPR_UNKNOWN
 
 	// draft-uttaro-idr-bgp-persistence-02
 	if better == nil {
